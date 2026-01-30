@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SMI SHORTEATS | Premium Pastry Shop</title>
+    <meta name="description"
+        content="SMI SHORTEATS - The best place for premium short eats, pastries, and buns in town. Taste the difference.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: '#D4AF37',
+                        darkbrown: '#3E2723',
+                        cream: '#FFF8E1',
+                        dark: '#1a1a1a',
+                    },
+                    fontFamily: {
+                        playfair: ['"Playfair Display"', 'serif'],
+                        poppins: ['"Poppins"', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body class="font-poppins bg-cream text-dark antialiased overflow-x-hidden">
+
+    <!-- Navbar -->
+    <nav id="navbar"
+        class="fixed w-full z-50 transition-all duration-300 py-4 px-6 md:px-12 flex justify-between items-center text-white bg-transparent">
+        <a href="#" class="text-2xl font-playfair font-bold text-gold tracking-wider">SMI SHORTEATS</a>
+
+        <div class="hidden md:flex space-x-8 font-medium">
+            <a href="#home" class="hover:text-gold transition-colors">Home</a>
+            <a href="#about" class="hover:text-gold transition-colors">About</a>
+            <a href="#menu" class="hover:text-gold transition-colors">Menu</a>
+            <a href="#reviews" class="hover:text-gold transition-colors">Reviews</a>
+            <a href="#contact" class="hover:text-gold transition-colors">Contact</a>
+        </div>
+
+        <button class="md:hidden text-2xl text-gold focus:outline-none">
+            <i class="fas fa-bars"></i>
+        </button>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home"
+        class="relative h-screen min-h-[600px] flex items-center justify-center bg-cover bg-center bg-no-repeat bg-fixed"
+        style="background-image: url('assets/images/hero_bg.png');">
+        <div class="absolute inset-0 bg-black/50"></div> <!-- Overlay -->
+
+        <div class="relative z-10 text-center text-white px-4 max-w-4xl mx-auto" data-aos="fade-up"
+            data-aos-duration="1000">
+            <p class="text-gold text-lg md:text-xl font-medium mb-4 tracking-widest uppercase">Welcome to Automationed
+                City's Finest</p>
+            <h1 class="text-5xl md:text-7xl font-playfair font-bold mb-6 leading-tight">Taste the Tradition of <br><span
+                    class="text-gold">SMI SHORTEATS</span></h1>
+            <p class="text-gray-200 text-lg md:text-xl mb-10 max-w-2xl mx-auto font-light">Experience the crunch of our
+                golden rolls, the softness of our buns, and the sweetness of our pastries. Baked fresh, served with
+                love.</p>
+            <div class="flex flex-col md:flex-row gap-4 justify-center">
+                <a href="#menu"
+                    class="bg-gold text-darkbrown px-8 py-3 rounded-full font-semibold hover:bg-white hover:text-darkbrown transition-all duration-300 shadow-lg transform hover:scale-105">View
+                    Menu</a>
+                <a href="#contact"
+                    class="border-2 border-white text-white px-8 py-3 rounded-full font-semibold hover:bg-white hover:text-darkbrown transition-all duration-300 shadow-lg transform hover:scale-105">Visit
+                    Us</a>
+            </div>
+        </div>
+
+        <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce">
+            <a href="#about"
+                class="text-white text-2xl opacity-70 hover:opacity-100 hover:text-gold transition-colors"><i
+                    class="fas fa-chevron-down"></i></a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about"
+        class="py-20 px-6 md:px-12 bg-white container mx-auto rounded-3xl -mt-10 relative z-20 shadow-xl max-w-7xl">
+        <div class="flex flex-col md:flex-row items-center gap-12">
+            <div class="md:w-1/2" data-aos="fade-right">
+                <div class="relative">
+                    <img src="assets/images/hero_bg.png" alt="Baker at work"
+                        class="rounded-2xl shadow-2xl w-full h-[400px] object-cover">
+                    <div class="absolute -bottom-6 -right-6 bg-gold p-6 rounded-xl shadow-lg hidden md:block">
+                        <p class="text-darkbrown font-bold text-3xl font-playfair">10+</p>
+                        <p class="text-darkbrown font-medium text-sm">Years of<br>Excellence</p>
+                    </div>
+                </div>
+            </div>
+            <div class="md:w-1/2" data-aos="fade-left">
+                <span class="text-gold font-bold uppercase tracking-wider text-sm">Our Story</span>
+                <h2 class="text-4xl md:text-5xl font-playfair font-bold text-darkbrown mt-2 mb-6">Baked with Passion,
+                    <br>Served with Pride</h2>
+                <p class="text-gray-600 mb-6 leading-relaxed">
+                    At SMI SHORTEATS, we believe that every bite should be a moment of joy. Started in the heart of the
+                    city, our little pastry shop has grown into a beloved landmark for foodies. We use only the finest
+                    ingredients—premium butter, fresh spices, and farm-fresh vegetables—to create short eats that are
+                    crispy on the outside and bursting with flavor on the inside.
+                </p>
+                <ul class="space-y-3 mb-8 text-gray-700">
+                    <li class="flex items-center"><i class="fas fa-check-circle text-gold mr-3"></i> 100% Freshly Baked
+                        Daily</li>
+                    <li class="flex items-center"><i class="fas fa-check-circle text-gold mr-3"></i> Authentic Sri
+                        Lankan Flavors</li>
+                    <li class="flex items-center"><i class="fas fa-check-circle text-gold mr-3"></i> Premium Quality
+                        Ingredients</li>
+                </ul>
+                <a href="#contact"
+                    class="text-gold font-semibold hover:text-darkbrown transition-colors border-b-2 border-gold pb-1 inline-block">Learn
+                    More About Us <i class="fas fa-arrow-right ml-2 text-sm"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="py-20 bg-cream">
+        <div class="container mx-auto px-6 md:px-12">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <span class="text-gold font-bold uppercase tracking-wider text-sm">Our Menu</span>
+                <h2 class="text-4xl md:text-5xl font-playfair font-bold text-darkbrown mt-2">Crowd Favorites</h2>
+                <p class="text-gray-600 mt-4 max-w-2xl mx-auto">Discover our most popular items, hand-picked and loved
+                    by our loyal customers.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Product 1 -->
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden group hover:shadow-2xl transition-all duration-300"
+                    data-aos="fade-up" data-aos-delay="100">
+                    <div class="h-64 overflow-hidden relative">
+                        <img src="assets/images/pastry_1.png" alt="Signature Fish Roll"
+                            class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500">
+                        <div
+                            class="absolute top-4 right-4 bg-gold text-white text-xs font-bold px-3 py-1 rounded-full uppercase">
+                            Best Seller</div>
+                    </div>
+                    <div class="p-8">
+                        <div class="flex justify-between items-baseline mb-2">
+                            <h3
+                                class="text-2xl font-playfair font-bold text-darkbrown group-hover:text-gold transition-colors">
+                                Signature Fish Roll</h3>
+                            <span class="text-xl font-bold text-gold">Rs. 120</span>
+                        </div>
+                        <p class="text-gray-600 mb-4 text-sm">Crispy breaded roll stuffed with a spicy, savory fish and
+                            potato filling.</p>
+                        <button
+                            class="w-full py-3 border border-darkbrown text-darkbrown rounded-xl hover:bg-darkbrown hover:text-gold transition-colors font-medium">Order
+                            Now</button>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden group hover:shadow-2xl transition-all duration-300"
+                    data-aos="fade-up" data-aos-delay="200">
+                    <div class="h-64 overflow-hidden relative">
+                        <img src="assets/images/pastry_2.png" alt="Spicy Chicken Bun"
+                            class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500">
+                    </div>
+                    <div class="p-8">
+                        <div class="flex justify-between items-baseline mb-2">
+                            <h3
+                                class="text-2xl font-playfair font-bold text-darkbrown group-hover:text-gold transition-colors">
+                                Spicy Chicken Bun</h3>
+                            <span class="text-xl font-bold text-gold">Rs. 150</span>
+                        </div>
+                        <p class="text-gray-600 mb-4 text-sm">Soft, fluffy bun filled with a rich, spicy chicken curry
+                            filling.</p>
+                        <button
+                            class="w-full py-3 border border-darkbrown text-darkbrown rounded-xl hover:bg-darkbrown hover:text-gold transition-colors font-medium">Order
+                            Now</button>
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden group hover:shadow-2xl transition-all duration-300"
+                    data-aos="fade-up" data-aos-delay="300">
+                    <div class="h-64 overflow-hidden relative">
+                        <img src="assets/images/pastry_3.png" alt="Chocolate Danish"
+                            class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500">
+                        <div
+                            class="absolute top-4 right-4 bg-darkbrown text-white text-xs font-bold px-3 py-1 rounded-full uppercase">
+                            Sweet</div>
+                    </div>
+                    <div class="p-8">
+                        <div class="flex justify-between items-baseline mb-2">
+                            <h3
+                                class="text-2xl font-playfair font-bold text-darkbrown group-hover:text-gold transition-colors">
+                                Chocolate Danish</h3>
+                            <span class="text-xl font-bold text-gold">Rs. 200</span>
+                        </div>
+                        <p class="text-gray-600 mb-4 text-sm">Flaky, buttery pastry filled with rich dark chocolate
+                            custard.</p>
+                        <button
+                            class="w-full py-3 border border-darkbrown text-darkbrown rounded-xl hover:bg-darkbrown hover:text-gold transition-colors font-medium">Order
+                            Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-12">
+                <a href="#"
+                    class="inline-block bg-darkbrown text-gold px-10 py-4 rounded-full font-semibold hover:bg-gold hover:text-darkbrown transition-all duration-300 shadow-xl transform hover:scale-105">View
+                    Full Menu</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section id="features" class="py-20 bg-darkbrown text-cream relative overflow-hidden">
+        <!-- Decorative bg elements -->
+        <div
+            class="absolute top-0 left-0 w-64 h-64 bg-gold opacity-5 rounded-full filter blur-3xl -translate-x-1/2 -translate-y-1/2">
+        </div>
+        <div
+            class="absolute bottom-0 right-0 w-96 h-96 bg-gold opacity-5 rounded-full filter blur-3xl translate-x-1/2 translate-y-1/2">
+        </div>
+
+        <div class="container mx-auto px-6 md:px-12 relative z-10">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-4xl md:text-5xl font-playfair font-bold text-white mb-4">Why SMI SHORTEATS?</h2>
+                <div class="w-24 h-1 bg-gold mx-auto"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 text-center">
+                <div class="p-6 transition-all duration-300 hover:-translate-y-2" data-aos="fade-up" data-aos-delay="0">
+                    <div
+                        class="w-20 h-20 bg-white/10 rounded-full flex items-center justify-center mx-auto mb-6 text-gold text-3xl">
+                        <i class="fas fa-bread-slice"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Freshly Baked</h3>
+                    <p class="text-gray-400 text-sm">We bake everything fresh every morning. No leftovers, ever.</p>
+                </div>
+                <div class="p-6 transition-all duration-300 hover:-translate-y-2" data-aos="fade-up"
+                    data-aos-delay="100">
+                    <div
+                        class="w-20 h-20 bg-white/10 rounded-full flex items-center justify-center mx-auto mb-6 text-gold text-3xl">
+                        <i class="fas fa- leaf"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Quality Ingredients</h3>
+                    <p class="text-gray-400 text-sm">We use imported butter, fresh milk, and premium spices.</p>
+                </div>
+                <div class="p-6 transition-all duration-300 hover:-translate-y-2" data-aos="fade-up"
+                    data-aos-delay="200">
+                    <div
+                        class="w-20 h-20 bg-white/10 rounded-full flex items-center justify-center mx-auto mb-6 text-gold text-3xl">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Made with Love</h3>
+                    <p class="text-gray-400 text-sm">Family recipe passed down through generations.</p>
+                </div>
+                <div class="p-6 transition-all duration-300 hover:-translate-y-2" data-aos="fade-up"
+                    data-aos-delay="300">
+                    <div
+                        class="w-20 h-20 bg-white/10 rounded-full flex items-center justify-center mx-auto mb-6 text-gold text-3xl">
+                        <i class="fas fa-shipping-fast"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Fast Delivery</h3>
+                    <p class="text-gray-400 text-sm">Hot and fresh delivery to your doorstep within 30 mins.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section id="reviews" class="py-20 bg-white">
+        <div class="container mx-auto px-6 md:px-12">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <span class="text-gold font-bold uppercase tracking-wider text-sm">Testimonials</span>
+                <h2 class="text-4xl md:text-5xl font-playfair font-bold text-darkbrown mt-2">What They Say</h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-cream p-8 rounded-2xl relative" data-aos="fade-up" data-aos-delay="0">
+                    <i class="fas fa-quote-left text-4xl text-gold/20 absolute top-4 left-4"></i>
+                    <p class="text-gray-600 mb-6 italic relative z-10">"The best fish rolls I've ever had! The filling
+                        is so flavorful and the crust is perfectly crispy. Highly recommended!"</p>
+                    <div class="flex items-center">
+                        <div class="w-12 h-12 bg-gray-300 rounded-full mr-4 overflow-hidden">
+                            <!-- Placeholder for user avatar -->
+                            <img src="https://ui-avatars.com/api/?name=Kasun+P&background=D4AF37&color=fff" alt="User">
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-darkbrown">Kasun Perera</h4>
+                            <div class="text-gold text-xs">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                    class="fas fa-star"></i><i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-cream p-8 rounded-2xl relative" data-aos="fade-up" data-aos-delay="100">
+                    <i class="fas fa-quote-left text-4xl text-gold/20 absolute top-4 left-4"></i>
+                    <p class="text-gray-600 mb-6 italic relative z-10">"SMI SHORTEATS is my go-to place for tea time.
+                        Their chocolate danish is absolutely divine. Great service too!"</p>
+                    <div class="flex items-center">
+                        <div class="w-12 h-12 bg-gray-300 rounded-full mr-4 overflow-hidden">
+                            <img src="https://ui-avatars.com/api/?name=Dilshan+M&background=D4AF37&color=fff"
+                                alt="User">
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-darkbrown">Dilshan Madushanka</h4>
+                            <div class="text-gold text-xs">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                    class="fas fa-star"></i><i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-cream p-8 rounded-2xl relative" data-aos="fade-up" data-aos-delay="200">
+                    <i class="fas fa-quote-left text-4xl text-gold/20 absolute top-4 left-4"></i>
+                    <p class="text-gray-600 mb-6 italic relative z-10">"Clean, hygienic, and tasty. The chicken buns are
+                        huge and full of meat. Worth every rupee."</p>
+                    <div class="flex items-center">
+                        <div class="w-12 h-12 bg-gray-300 rounded-full mr-4 overflow-hidden">
+                            <img src="https://ui-avatars.com/api/?name=Amaya+S&background=D4AF37&color=fff" alt="User">
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-darkbrown">Amaya Silva</h4>
+                            <div class="text-gold text-xs">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                    class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Footer -->
+    <footer id="contact" class="bg-dark text-white pt-20 pb-10">
+        <div class="container mx-auto px-6 md:px-12">
+            <div class="flex flex-col md:flex-row justify-between gap-12 mb-16">
+                <div class="md:w-1/3" data-aos="fade-right">
+                    <a href="#" class="text-3xl font-playfair font-bold text-gold tracking-wider mb-6 block">SMI
+                        SHORTEATS</a>
+                    <p class="text-gray-400 mb-6">Premium pastry shop dedicated to bringing you the finest authentic Sri
+                        Lankan short eats and international pastries.</p>
+                    <div class="flex space-x-4">
+                        <a href="#"
+                            class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-gold hover:text-darkbrown transition-all duration-300"><i
+                                class="fab fa-facebook-f"></i></a>
+                        <a href="#"
+                            class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-gold hover:text-darkbrown transition-all duration-300"><i
+                                class="fab fa-instagram"></i></a>
+                        <a href="#"
+                            class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-gold hover:text-darkbrown transition-all duration-300"><i
+                                class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+
+                <div class="md:w-1/3" data-aos="fade-up">
+                    <h4 class="text-xl font-bold mb-6 text-gold">Opening Hours</h4>
+                    <ul class="text-gray-400 space-y-2">
+                        <li class="flex justify-between border-b border-gray-700 pb-2"><span>Monday - Friday</span>
+                            <span>7:00 AM - 8:00 PM</span></li>
+                        <li class="flex justify-between border-b border-gray-700 pb-2"><span>Saturday</span> <span>8:00
+                                AM - 9:00 PM</span></li>
+                        <li class="flex justify-between pb-2"><span>Sunday</span> <span>8:00 AM - 6:00 PM</span></li>
+                    </ul>
+                </div>
+
+                <div class="md:w-1/3" data-aos="fade-left">
+                    <h4 class="text-xl font-bold mb-6 text-gold">Get in Touch</h4>
+                    <ul class="text-gray-400 space-y-4">
+                        <li class="flex items-start"><i class="fas fa-map-marker-alt text-gold mt-1 mr-3"></i> <span>N0
+                                40, Leelawatta, <br>Palugamuwa, Dummalasooriya.</span></li>
+                        <li class="flex items-center"><i class="fas fa-phone text-gold mr-3"></i> <span>076 445
+                                2483</span></li>
+                        <li class="flex items-center"><i class="fas fa-envelope text-gold mr-3"></i>
+                            <span>hello@smishorteats.lk</span></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-800 pt-8 text-center text-gray-500 text-sm">
+                <p>&copy; 2026 SMI SHORTEATS. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
